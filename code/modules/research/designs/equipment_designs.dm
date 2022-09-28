@@ -152,6 +152,16 @@
 	build_path = /obj/item/clothing/mask/gas/welding
 	category = list("Equipment")
 
+/datum/design/welding_goggles
+	name = "Welding Goggles"
+	desc = "Protects the eyes from welders, approved by the mad scientist association."
+	id = "welding-g"
+	req_tech = list("materials" = 2, "engineering" = 3)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 3000)
+	build_path = /obj/item/clothing/glasses/welding
+	category = list("Equipment")
+
 /datum/design/portaseeder
 	name = "Portable Seed Extractor"
 	desc = "For the enterprising botanist on the go. Less efficient than the stationary model, it creates one seed per plant."
