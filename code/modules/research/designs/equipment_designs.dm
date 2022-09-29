@@ -158,7 +158,7 @@
 	id = "welding-g"
 	req_tech = list("materials" = 2, "engineering" = 3)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 3000)
+	materials = list(MAT_METAL = 1500)
 	build_path = /obj/item/clothing/glasses/welding
 	category = list("Equipment")
 
