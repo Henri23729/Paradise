@@ -237,6 +237,14 @@
 	user.visible_message("<span class='suicide'>[dmsg] It looks like [user.p_theyre()] trying to commit suicide.</span>")
 	return BRUTELOSS
 
+/obj/item/toy/baton
+	name = "toy alien baton"
+	desc = "A plastic baton used in movies to abduct cows."
+	icon = 'icons/obj/abductor.dmi'
+	icon_state = "wonderprodStun"
+	item_state = "wonderprod"
+	w_class = WEIGHT_CLASS_NORMAL
+	attack_verb = list("stunned", "probed")
 
 /*
  * Snap pops viral shit
