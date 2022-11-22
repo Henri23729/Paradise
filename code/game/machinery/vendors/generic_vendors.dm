@@ -58,10 +58,10 @@
 	icon_panel = "screen_vendor"
 	item_slot = TRUE
 	vend_delay = 34
-	products = list(/obj/item/reagent_containers/food/drinks/coffee = 25, /obj/item/reagent_containers/food/drinks/tea = 25, /obj/item/reagent_containers/food/drinks/h_chocolate = 25,
-					/obj/item/reagent_containers/food/drinks/chocolate = 10, /obj/item/reagent_containers/food/drinks/chicken_soup = 10, /obj/item/reagent_containers/food/drinks/weightloss = 10,
-					/obj/item/reagent_containers/food/drinks/mug = 15)
-	contraband = list(/obj/item/reagent_containers/food/drinks/ice = 10)
+	products = list(/obj/item/reagent_containers/food/drinks/coffee = 8, /obj/item/reagent_containers/food/drinks/tea = 8, /obj/item/reagent_containers/food/drinks/h_chocolate = 8,
+					/obj/item/reagent_containers/food/drinks/chocolate = 8, /obj/item/reagent_containers/food/drinks/chicken_soup = 8, /obj/item/reagent_containers/food/drinks/weightloss = 8,
+					/obj/item/reagent_containers/food/drinks/mug = 8)
+	contraband = list(/obj/item/reagent_containers/food/drinks/ice = 8)
 	premium = list(/obj/item/reagent_containers/food/drinks/mug/novelty = 5)
 	prices = list(/obj/item/reagent_containers/food/drinks/coffee = 80, /obj/item/reagent_containers/food/drinks/tea = 80, /obj/item/reagent_containers/food/drinks/h_chocolate = 64, /obj/item/reagent_containers/food/drinks/chocolate = 120,
 				  /obj/item/reagent_containers/food/drinks/chicken_soup = 100, /obj/item/reagent_containers/food/drinks/weightloss = 50, /obj/item/reagent_containers/food/drinks/mug = 75)
@@ -691,9 +691,9 @@
 	icon_panel = "thin_vendor"
 	slogan_list = list("Robust Softdrinks: More robust than a toolbox to the head!")
 	ads_list = list("Refreshing!","Hope you're thirsty!","Over 1 million drinks sold!","Thirsty? Why not cola?","Please, have a drink!","Drink up!","The best drinks in space.")
-	products = list(/obj/item/reagent_containers/food/drinks/cans/cola = 10, /obj/item/reagent_containers/food/drinks/cans/space_mountain_wind = 10,
-					/obj/item/reagent_containers/food/drinks/cans/dr_gibb = 10, /obj/item/reagent_containers/food/drinks/cans/starkist = 10,
-					/obj/item/reagent_containers/food/drinks/cans/space_up = 10, /obj/item/reagent_containers/food/drinks/cans/grape_juice = 10)
+	products = list(/obj/item/reagent_containers/food/drinks/cans/cola = 8, /obj/item/reagent_containers/food/drinks/cans/space_mountain_wind = 8,
+					/obj/item/reagent_containers/food/drinks/cans/dr_gibb = 8, /obj/item/reagent_containers/food/drinks/cans/starkist = 8,
+					/obj/item/reagent_containers/food/drinks/cans/space_up = 8, /obj/item/reagent_containers/food/drinks/cans/grape_juice = 8)
 	contraband = list(/obj/item/reagent_containers/food/drinks/cans/thirteenloko = 5)
 	prices = list(/obj/item/reagent_containers/food/drinks/cans/cola = 45, /obj/item/reagent_containers/food/drinks/cans/space_mountain_wind = 50,
 					/obj/item/reagent_containers/food/drinks/cans/dr_gibb = 50, /obj/item/reagent_containers/food/drinks/cans/starkist = 50,
@@ -779,7 +779,7 @@
 	icon_state = "cigs"
 	icon_lightmask = "cigs"
 	products = list(
-		/obj/item/storage/fancy/cigarettes/cigpack_robust = 12,
+		/obj/item/storage/fancy/cigarettes/cigpack_robust = 6,
 		/obj/item/storage/fancy/cigarettes/cigpack_uplift = 6,
 		/obj/item/storage/fancy/cigarettes/cigpack_midori = 6,
 		/obj/item/storage/fancy/cigarettes/cigpack_random = 6,
@@ -859,13 +859,13 @@
 	icon_lightmask = "med"
 	icon_deny = "cart_deny"
 	icon_panel = "wide_vendor"
-	products = list(/obj/item/pda =10,/obj/item/cartridge/mob_hunt_game = 25, /obj/item/cartridge/medical = 10, /obj/item/cartridge/chemistry = 10,
-					/obj/item/cartridge/engineering = 10, /obj/item/cartridge/atmos = 10, /obj/item/cartridge/janitor = 10,
-					/obj/item/cartridge/signal/toxins = 10, /obj/item/cartridge/signal = 10)
-	contraband = list(/obj/item/cartridge/clown = 1,/obj/item/cartridge/mime = 1)
+	products = list(/obj/item/pda = 8,/obj/item/cartridge/mob_hunt_game = 16, /obj/item/cartridge/medical = 8, /obj/item/cartridge/chemistry = 8,
+					/obj/item/cartridge/engineering = 8, /obj/item/cartridge/atmos = 8, /obj/item/cartridge/janitor = 8,
+					/obj/item/cartridge/signal/toxins = 8, /obj/item/cartridge/signal = 8)
+	contraband = list(/obj/item/cartridge/clown = 1, /obj/item/cartridge/mime = 1)
 	prices = list(/obj/item/pda = 300, /obj/item/cartridge/mob_hunt_game = 50, /obj/item/cartridge/medical = 200,
-					/obj/item/cartridge/chemistry = 150,/obj/item/cartridge/engineering = 100, /obj/item/cartridge/atmos = 75,
-					/obj/item/cartridge/janitor = 100,/obj/item/cartridge/signal/toxins = 150, /obj/item/cartridge/signal = 75)
+					/obj/item/cartridge/chemistry = 150, /obj/item/cartridge/engineering = 100, /obj/item/cartridge/atmos = 75,
+					/obj/item/cartridge/janitor = 100, /obj/item/cartridge/signal/toxins = 150, /obj/item/cartridge/signal = 75)
 	refill_canister = /obj/item/vending_refill/cart
 
 /obj/machinery/economy/vending/cart/free
