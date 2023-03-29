@@ -235,11 +235,12 @@
 			var/turf/Start = get_turf(src)
 			for(var/direction in GLOB.alldirs)
 				var/turf/dirturf = get_step(Start, direction)
-				new /obj/item/stack/spacecash/c1000(dirturf)
-				new /obj/item/stack/spacecash/c1000(dirturf)
-				new /obj/item/stack/spacecash/c1000(dirturf)
-				new /obj/item/stack/spacecash/c1000(dirturf)
-				new /obj/item/stack/spacecash/c1000(dirturf)
+				if(prob(50))
+					new /obj/item/stack/spacecash/c1000(dirturf)
+				else
+					var/obj/item/storage/bag/money/M = new(dirturf)
+					for(var/i in 1 to rand(5, 50))
+						new /obj/item/coin/gold(M)
 		if(14)
 			//Free Gun
 			T.visible_message("<span class='userdanger'>An impressive gun appears!</span>")
@@ -278,7 +279,7 @@
 		if(17)
 			//Tator Item
 			var/traitor_item = pick(/obj/item/chameleon, /obj/item/borg/upgrade/modkit/indoors, /obj/item/storage/box/syndie_kit/chameleon, /obj/item/encryptionkey/binary, /obj/item/storage/box/syndie_kit/hardsuit, /obj/item/implanter/storage, /obj/item/toy/syndicateballoon)
-			T.visible_message("<span class='userdanger'>A suspicious [traitor_item] appears!</span>")
+			T.visible_message("<span class='userdanger'>A suspicious item appears!</span>")
 			new traitor_item(drop_location())
 			create_smoke(2)
 		if(18)
@@ -292,9 +293,11 @@
 			user.physiology.brute_mod *= 0.5
 			user.physiology.burn_mod *= 0.5
 		if(20)
-			//Free wizard!
-			T.visible_message("<span class='userdanger'>Magic flows out of [src] and into [user]!</span>")
-			user.mind.make_Wizard()
+			//Three free good dice rolls!
+			T.visible_message("<span class='userdanger'>Critical number! [src] is rolling three times all by himself!</span>")
+			addtimer(CALLBACK(src, PROC_REF(effect), user, rand(1, 9) + 10), 1 SECONDS)
+			addtimer(CALLBACK(src, PROC_REF(effect), user, rand(1, 9) + 10), 1 SECONDS)
+			addtimer(CALLBACK(src, PROC_REF(effect), user, rand(1, 9) + 10), 1 SECONDS)
 
 /obj/item/dice/d100
 	name = "d100"
